@@ -1,11 +1,11 @@
-import { Zap, Star, Moon, Sun, Bell, Award, LogOut, ChevronDown, User } from "lucide-react"
+import { Moon, Sun, LogOut, ChevronDown, User } from "lucide-react"
 import { useStore } from "../../store/useStore"
 import MusicPlayer from "../ui/MusicPlayer"
 import { useState, useRef, useEffect } from "react"
 import { useNavigate } from "react-router-dom"
 
 export default function Topbar() {
-  const { xp, level, energy, theme, toggleTheme, userProfile } = useStore()
+  const { theme, toggleTheme, userProfile } = useStore()
   const navigate = useNavigate()
   
   const [isDropdownOpen, setIsDropdownOpen] = useState(false)

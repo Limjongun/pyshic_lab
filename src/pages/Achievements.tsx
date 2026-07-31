@@ -11,7 +11,7 @@ const AVAILABLE_BADGES = [
 ]
 
 export default function Achievements() {
-  const { xp, badges, buyBadge, energy, addEnergy } = useStore();
+  const { xp, badges, buyBadge, energy } = useStore();
   const [toast, setToast] = useState<string | null>(null);
 
   const handleBuy = (badgeId: string, cost: number) => {
@@ -21,16 +21,6 @@ export default function Achievements() {
     } else {
       setToast("XP tidak cukup!");
       setTimeout(() => setToast(null), 3000);
-    }
-  }
-
-  const handleRest = () => {
-    // Tombol darurat pemulih energi jika habis, cost XP
-    if (xp >= 50) {
-      if (buyBadge("energy_refill", 50)) { // fake badge ID or we can just deduct XP manually.
-        // Actually buyBadge returns false if already has it. We should use spendXp if it existed.
-      }
-    }
   }
 
   return (
@@ -119,4 +109,5 @@ export default function Achievements() {
       </div>
     </div>
   )
+}
 }

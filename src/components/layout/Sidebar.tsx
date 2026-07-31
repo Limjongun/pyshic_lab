@@ -1,11 +1,9 @@
 import { NavLink } from "react-router-dom"
-import { Home, BookOpen, HelpCircle, FlaskConical, Target, Trophy, Calculator, Settings, Info, Share2, Flame, LibraryBig, Award, Box, Cpu, Grid3x3, User } from "lucide-react"
+import { Home, BookOpen, HelpCircle, FlaskConical, Target, Calculator, Info, Share2, LibraryBig, Box, Cpu, Grid3x3, User } from "lucide-react"
 import { Button } from "@/components/ui/button"
-import { useStore } from "@/store/useStore"
 
 export default function Sidebar() {
-  const { xp, level } = useStore()
-
+  
   const menuItems = [
     { name: "Beranda", icon: Home, path: "/app" },
     { name: "Belajar", icon: BookOpen, path: "/app/learn" },

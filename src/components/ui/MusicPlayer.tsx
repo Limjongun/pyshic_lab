@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from 'react';
+import { useState, useRef, useEffect } from 'react';
 import { Music, Play, Pause, SkipForward } from 'lucide-react';
 
 const TRACKS = [
