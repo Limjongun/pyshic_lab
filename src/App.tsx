@@ -24,7 +24,6 @@ import SandboxUniverse from "./pages/SandboxUniverse"
 import AdvanceLab from "./pages/AdvanceLab"
 import Calculator from "./pages/Calculator"
 import Learn from "./pages/Learn"
-import Achievements from "./pages/Achievements"
 import Kinematika from "./pages/learn/Kinematika"
 import Dinamika from "./pages/learn/Dinamika"
 import Energi from "./pages/learn/Energi"
@@ -99,8 +98,7 @@ export default function App() {
           <Route path="lab/torricelli" element={<TorricelliLab />} />
           <Route path="lab/carnot" element={<CarnotLab />} />
           <Route path="journal" element={<Journal />} />
-          <Route path="achievements" element={<Achievements />} />
-          <Route path="calculator" element={<Calculator />} />
+                    <Route path="calculator" element={<Calculator />} />
           <Route path="sandbox" element={<SandboxUniverse />} />
           <Route path="advance-lab" element={<AdvanceLab />} />
           
