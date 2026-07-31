@@ -168,7 +168,7 @@ export default function CatapultLab() {
       }
     });
 
-    Events.on(mouseConstraint, 'startdrag', (e) => {
+    Events.on(mouseConstraint, 'startdrag', (e: any) => {
       if (e.body && e.body.label === 'rock') playSfx('pull');
     });
 
